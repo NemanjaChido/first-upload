@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #091921;
+}
+.calculator{
+    position: relative;
+    display: grid;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.calculator .value{
+    grid-column: span 4;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    padding: 0.6rem;
+    text-align: right;
+    height: 6.2rem;
+}
+.calculator span{
+    display: grid;
+    width: 3.8rem;
+    height: 3.8rem;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.calculator span:active{
+    background: #d2e0e3;
+    color: #0c2835;
+}
+.calculator span.clear{
+    grid-column: span 2;
+    width: 7.5rem;
+    color: #e4e5e7;
+    font-weight: 600;
+    font-size: 1.5rem;
+    background: #62341d;
+}
+.calculator span.clear:active{
+    background: #915436;
+}
+.calculator span.plus{
+    grid-row: span 2;
+    height: 7.5rem;
+}
+.calculator span.equal{
+    background: #03b1ff;
+    color: #000;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
